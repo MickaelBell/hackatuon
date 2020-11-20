@@ -1,8 +1,15 @@
+
 section {
   font-family: Medieval;
+  background-image:url(../assets/Logos/background.jpg);
+  background-position: center;
   display: grid;
   grid-template-rows: 0.2fr 1fr 0.1fr;
-  height: 100vh;
+  height: 150vh;
+  width: 81vh;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .header {
