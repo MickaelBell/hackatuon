@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -20,7 +19,9 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // tslint:disable-next-line:typedef
   sendContact(contactData) {
     console.log(contactData);
+    alert('Your crow is off to a good go');
   }
 }

@@ -1,23 +1,29 @@
-<div class="row justify-content-center">
-  <div class="jumbotron w-25 text-center">
-    <form [formGroup]="contactForm" (ngSubmit)="sendContact(contactForm.value)">
-      <div>
-        <label for="name">Name: </label>
-        <input id="name" type="text" formControlName = "name">
-      </div>
-      <div>
-        <label for="email">Email: </label>
-        <input id="email" type="text" formControlName = "email">
-      </div>
-      <div>
-        <label for="message">Message </label>
-        <input id="message" type="text" formControlName = "message">
-      </div>
-      <div>
-        <button type="submit">Add your Comment</button>
-      </div>
-    </form>
+<form class="form"  [formGroup]="contactForm" (ngSubmit)="sendContact(contactForm.value)">
+  <div class="firstName">
+    <label for="firstName"></label>
+    <input name="firstName" type="text" formControlName = "firstName" required minlength="3" maxlength="30" placeholder="Firstname"/>
   </div>
-</div>
+
+  <div class="lastName">
+      <label for="lastName"></label>
+      <input name="lastName" type="text"  formControlName = "lastName" required minlength="3" maxlength="30" placeholder="Lastname"/>
+    </div>
+    <div>
+      <label for="race"></label>
+      <input name="race" type="text" required placeholder="Your Race">
+    </div>
+
+  <div class="mail">
+    <label for="email"></label>
+    <input name="email" type="email"  formControlName = "email" required email placeholder="Your raven">
+  </div>
+
+  <div>
+    <textarea type="text"  rows="5" cols="50" placeholder="Write your message "></textarea>
+  </div>
+
+  <div class="send">
+    <button  class="soum" type="submit">Send</button>
+  </div>
 
 
