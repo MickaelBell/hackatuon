@@ -23,7 +23,7 @@ section {
     position: fixed;
     bottom: 0;
     left: 0;
-    background-image: url('../assets/picture/decor-donjon-mur-de-pierres.jpg');
+    background-color: #e21313;
     z-index: 3;
   }
 }
@@ -38,7 +38,7 @@ section {
     grid-row: 2/3;
     width: 100%;
     height: 80%;
-    background-image: url('../assets/picture/decor-donjon-mur-de-pierres.jpg');
+    background-color: #e21313;
   }
   .root {
     grid-row: 3/4;
