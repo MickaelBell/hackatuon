@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListJobsDetailComponent } from './list-jobs-detail/list-jobs-detail.component';
+import { JobPageComponent } from './job-page/job-page.component';
 
 
 
@@ -24,7 +25,8 @@ import { ListJobsDetailComponent } from './list-jobs-detail/list-jobs-detail.com
     HeaderComponent,
     FooterComponent,
     NavBarComponent,
-    ListJobsDetailComponent
+    ListJobsDetailComponent,
+    JobPageComponent
   ],
   imports: [
     BrowserModule,
