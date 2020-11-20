@@ -7,15 +7,15 @@
     <div class="jobDexcription">
       <h1>{{jobListDetail.strJob}}</h1>
       <p>salary: {{jobListDetail.strJobGold}}</p>
-      <p>duration of the contract: {{jobListDetail.strPeriodJob}}</p>
+      <p>duration: {{jobListDetail.strPeriodJob}}</p>
     </div>
     <div>
       <span *ngIf="buttonClicked">
        <p class="require">
-        {{jobListDetail.strJobRequirement}}
+        {{jobListDetail.strJobDescription}}
        </p>
        <p>
-         {{jobListDetail.strJobDescription}}
+         {{jobListDetail.strJobRequirement}}
        </p>
       </span>
     </div>
