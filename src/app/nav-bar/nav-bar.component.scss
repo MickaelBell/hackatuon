@@ -1,0 +1,39 @@
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  list-style-type: none;
+  width: 95%;
+}
+
+nav li {
+  margin-left: 0.8em;
+}
+
+nav ul li a {
+  display: flex;
+}
+
+img{
+  height: 1.5em;
+}
+
+nav{
+  margin-bottom: 1.5em;
+  position: sticky;
+}
+p {
+  display: none;
+}
+@media only screen and (min-device-width: 480px){
+  p{
+    display: block;
+    color: #ffffff;
+  }
+  li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

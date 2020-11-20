@@ -1,0 +1,24 @@
+<section class="jobSection">
+
+  <div class="jobContainer">
+    <div class="jobImage">
+      <button (click)="onButtonClick()"><img src="{{ jobListDetail.strJobPics }}" alt="jobPic"></button>
+    </div>
+    <div class="jobDexcription">
+      <h1>{{jobListDetail.strJob}}</h1>
+      <p>salary: {{jobListDetail.strJobGold}}</p>
+      <p>duration of the contract: {{jobListDetail.strPeriodJob}}</p>
+    </div>
+    <div>
+      <span *ngIf="buttonClicked">
+       <p class="require">
+        {{jobListDetail.strJobRequirement}}
+       </p>
+       <p>
+         {{jobListDetail.strJobDescription}}
+       </p>
+      </span>
+    </div>
+  </div>
+
+</section>

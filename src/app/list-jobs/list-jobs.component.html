@@ -1,0 +1,7 @@
+<section class="jobSection">
+
+  <div class="jobContainer" *ngFor='let aJob of jobList'>
+    <app-list-jobs-detail [jobListDetail] = "aJob"></app-list-jobs-detail>
+  </div>
+
+</section>
