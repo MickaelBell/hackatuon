@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({
-      name: ' ',
+      firstName: ' ',
       email: ' ',
       message: ' ',
     });
@@ -22,6 +22,6 @@ export class ContactComponent implements OnInit {
   // tslint:disable-next-line:typedef
   sendContact(contactData) {
     console.log(contactData);
-    alert(contactData);
+    alert('Your crow is off to a good go');
   }
 }
