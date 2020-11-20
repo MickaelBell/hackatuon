@@ -15,7 +15,6 @@ import { ListJobsDetailComponent } from './list-jobs-detail/list-jobs-detail.com
 import { FormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
