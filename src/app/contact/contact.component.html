@@ -1,25 +1,29 @@
-
-
-<form class="form">
+<form class="form"  [formGroup]="contactForm" (ngSubmit)="sendContact(contactForm.value)">
   <div class="firstName">
-    <label for="firstName">Firstname : </label>
-    <input name="name" type="text" required minlength="3" maxlength="30"/>
+    <label for="firstName"></label>
+    <input name="firstName" type="text" formControlName = "firstName" required minlength="3" maxlength="30" placeholder="Firstname"/>
   </div>
 
   <div class="lastName">
-      <label for="lastName">Lastname : </label>
-      <input name="lastName" type="text" required minlength="3" maxlength="30"/>
+      <label for="lastName"></label>
+      <input name="lastName" type="text"  formControlName = "lastName" required minlength="3" maxlength="30" placeholder="Lastname"/>
+    </div>
+    <div>
+      <label for="race"></label>
+      <input name="race" type="text" required placeholder="Your Race">
     </div>
 
   <div class="mail">
-    <label for="email">Mail : </label>
-    <input name="email" type="email" required email>
+    <label for="email"></label>
+    <input name="email" type="email"  formControlName = "email" required email placeholder="Your raven">
+  </div>
+
+  <div>
+    <textarea type="text"  rows="5" cols="50" placeholder="Write your message "></textarea>
   </div>
 
   <div class="send">
-    <button class="send" type="submit">Send</button>
+    <button  class="soum" type="submit">Send</button>
   </div>
-
-</form>
 
 
