@@ -3,13 +3,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../../assets/picture/fantasy-782001_1920.jpg");
+  background-image: url("../../../src/assets/picture/fantasy-782001_1920.jpg");
+  height: 100%;
 }
 
 div {
+  display: flex;
+  flex-direction: column;
   margin-top: 1em;
 }
 
+.soum {
+  box-shadow: 1px 1px 2px black;
+}
+
+input {
+  box-shadow: 1px 1px 2px black;
+}
+
+textarea {
+  box-shadow: 1px 1px 2px black;
+  border-radius: 5px;
+}
 
 
 
