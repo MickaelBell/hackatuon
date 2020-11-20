@@ -13,6 +13,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListJobsDetailComponent } from './list-jobs-detail/list-jobs-detail.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JobPageComponent } from './job-page/job-page.component';
+
 
 
 @NgModule({
@@ -24,7 +26,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     NavBarComponent,
-    ListJobsDetailComponent
+    ListJobsDetailComponent,
+    JobPageComponent
   ],
   imports: [
     BrowserModule,

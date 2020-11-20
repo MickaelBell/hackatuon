@@ -10,7 +10,7 @@ export class ContactComponent implements OnInit {
 
   constructor( private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({
-      firstName: ' ',
+      name: ' ',
       email: ' ',
       message: ' ',
     });
