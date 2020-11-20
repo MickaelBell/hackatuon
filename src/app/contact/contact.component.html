@@ -1,12 +1,12 @@
-<form class="form">
+<form class="form"  [formGroup]="contactForm" (ngSubmit)="sendContact(contactForm.value)">
   <div class="firstName">
     <label for="firstName"></label>
-    <input name="name" type="text" required minlength="3" maxlength="30" placeholder="Fir instastname"/>
+    <input name="name" type="text" formControlName = "name" required minlength="3" maxlength="30" placeholder="Firstname"/>
   </div>
 
   <div class="lastName">
       <label for="lastName"></label>
-      <input name="lastName" type="text" required minlength="3" maxlength="30" placeholder="Lastname"/>
+      <input name="lastName" type="text"  formControlName = "lastName" required minlength="3" maxlength="30" placeholder="Lastname"/>
     </div>
     <div>
       <label for="race"></label>
@@ -15,7 +15,7 @@
 
   <div class="mail">
     <label for="email"></label>
-    <input name="email" type="email" required email placeholder="Your raven">
+    <input name="email" type="email"  formControlName = "email" required email placeholder="Your raven">
   </div>
 
   <div>
