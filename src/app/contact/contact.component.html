@@ -1,25 +1,23 @@
-
-
-<form class="form">
-  <div class="firstName">
-    <label for="firstName">Firstname : </label>
-    <input name="name" type="text" required minlength="3" maxlength="30"/>
+<div class="row justify-content-center">
+  <div class="jumbotron w-25 text-center">
+    <form [formGroup]="contactForm" (ngSubmit)="sendContact(contactForm.value)">
+      <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" formControlName = "name">
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input id="email" type="text" formControlName = "email">
+      </div>
+      <div>
+        <label for="message">Message </label>
+        <input id="message" type="text" formControlName = "message">
+      </div>
+      <div>
+        <button type="submit">Add your Comment</button>
+      </div>
+    </form>
   </div>
-
-  <div class="lastName">
-      <label for="lastName">Lastname : </label>
-      <input name="lastName" type="text" required minlength="3" maxlength="30"/>
-    </div>
-
-  <div class="mail">
-    <label for="email">Mail : </label>
-    <input name="email" type="email" required email>
-  </div>
-
-  <div class="send">
-    <button class="send" type="submit">Send</button>
-  </div>
-
-</form>
+</div>
 
 
