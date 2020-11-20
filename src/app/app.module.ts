@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ListJobsDetailComponent } from './list-jobs-detail/list-jobs-detail.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JobPageComponent } from './job-page/job-page.component';
 
 
@@ -34,7 +34,8 @@ import { JobPageComponent } from './job-page/job-page.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
